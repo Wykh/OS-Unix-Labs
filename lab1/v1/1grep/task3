@@ -1,0 +1,2 @@
+#!/bin/bash
+find ./files -type f -exec cat {} + | egrep -i -v '^(a|e|i|o|u)' | 
