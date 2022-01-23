@@ -1,2 +1,5 @@
 #!/bin/bash
-find ./files -type f -exec cat {} + | egrep -i -v '^(a|e|i|o|u)' | 
+egrep -rnwil './files/' -e '[^.aeoyuij]+'
+
+#match words without voluws in current directory
+#egrep -w -i '[^.aeoyuij]+' ./files/*

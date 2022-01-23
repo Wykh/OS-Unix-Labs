@@ -1,5 +1,7 @@
 #!/bin/bash
-find ./files -type f -exec cat {} + | egrep -i '^(a|e|i|o|u)' | sort
+egrep -irh '^(a|e|i|o|u)' ./files/ | sort
+
+#find ./files -type f -exec cat {} + | egrep -i '^(a|e|i|o|u)' | sort
 
 # use sort -f to ignore-case
 

@@ -1,2 +1,10 @@
 #!/bin/bash
-find ./files -type f -exec cat {} + | wc -l
+
+#first method
+#find ./files -type f -exec cat {} + | wc -l
+
+#second method
+#egrep -irh ./files  -e '[a-z]+' | grep -ic '[a-z]\+'
+
+#third method
+egrep -irhc ./files  -e '[a-z]+' | paste -sd+ - | bc
