@@ -18,5 +18,6 @@ echo -------------
 
 # 4 - task4
 echo ----task4----
+# echo *.xyz | xargs -n 1 awk '{sum+=$5} END{print FILENAME,sum }' > output.txt
 awk '$1=="tomato"{print FILENAME}' ./files/* | awk -F"/|_" '{print $3, $4}'
 echo -------------
