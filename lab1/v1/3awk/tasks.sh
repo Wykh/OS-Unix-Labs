@@ -6,7 +6,7 @@ echo -----files-----
 tree ./files/
 echo ---------------
 
-# 1&2 - task12
+# 1&2 - task1&2
 echo -----task1\&2---
 awk 'FNR==1{n=split(FILENAME,a,"/");print a[n]}' ./files/* | awk '{n=split($1,a,"_");print a[1],"->",a[n]}'
 echo ---------------
