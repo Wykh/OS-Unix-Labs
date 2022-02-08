@@ -18,6 +18,7 @@ echo ---------------
 
 # 3 - task3
 echo -----task3-----
+#c - replace
 sed -r '/error|ERROR/s/^[a-zA-Z0-9 ]+$/Achtung!!!/' file
 echo ---------------
 

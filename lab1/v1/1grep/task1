@@ -1,5 +1,5 @@
 #!/bin/bash
-egrep -irh '^(a|e|i|o|u)' ./files/ | sort
+egrep -irh '^[aeiou]' ./files/ | sort
 
 #find ./files -type f -exec cat {} + | egrep -i '^(a|e|i|o|u)' | sort
 
