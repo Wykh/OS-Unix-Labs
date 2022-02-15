@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#first method
-#find ./files -type f -exec cat {} + | sort -f | tail -n 1
-
-#second method
-grep -iErh ./files/ -e '[a-z]+' | sort -f | tail -n 1

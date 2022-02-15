@@ -1,5 +1,0 @@
-#!/bin/bash
-egrep -rnwil './files/' -e '[^.aeoyuij]+'
-
-#match words without voluws in current directory
-#egrep -w -i '[^.aeoyuij]+' ./files/*
