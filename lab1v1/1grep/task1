@@ -1,0 +1,24 @@
+#!/bin/bash
+egrep -irh '^[aeiou]' ./files/ | sort
+
+#find ./files -type f -exec cat {} + | egrep -i '^(a|e|i|o|u)' | sort
+
+# use sort -f to ignore-case
+
+# cat ./files/* | egrep -i '^(a|e|i|o|u)' | sort
+#echo "asdfsafas"
+#
+#IFS=$'\n' read -d '' -r -a lines < ./files/file1
+#
+#echo "${lines[@]}"
+#
+#readarray -t a < ./files/file1
+#
+#echo "${a[@]}"
+#IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat ./files/file1))'
+#echo "${XYZ[0]}"
+#
+#echo " "
+#
+#
+
